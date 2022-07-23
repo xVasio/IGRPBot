@@ -1,8 +1,9 @@
 # Import the command handler
 import lightbulb
+import os
 
 # Instantiate a Bot instance
-bot = lightbulb.BotApp(token="your_token_here", prefix="your_prefix_here")
+bot = lightbulb.BotApp(token=os.environ['TOKEN'], prefix="%")
 
 # Register the command to the bot
 @bot.command
