@@ -16,8 +16,8 @@ bot = lightbulb.BotApp(token=os.environ['TOKEN'], prefix="%")
 async def ping(ctx: lightbulb.Context) -> None:
     # Send a message to the channel the command was used in
     await ctx.respond("Pong!")
-
+bot.run()
 # Run the bot
 # Note that this is blocking meaning no code after this line will run
 # until the bot is shut off
-bot.run()
+
