@@ -1,10 +1,7 @@
 # Import the command handler
 import lightbulb
-import os
-from dotenv import load_dotenv
+from config import TOKEN
 
-load_dotenv()
-TOKEN = os.getenv("TOKEN")
 # Instantiate a Bot instance
 bot = lightbulb.BotApp(token=TOKEN, prefix="%")
 
